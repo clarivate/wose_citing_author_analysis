@@ -21,6 +21,14 @@ Citing records are cached as they are returned by the `/citing` endpoint. This a
 
 Progress is printed during long retrieval stages so that large citation sets do not appear to stall.
 
+## Example Output
+
+Below is an example of the Citing Author Analysis output:
+
+<p align="center">
+  <img src="ResIntAPICA.jpg" alt="Example Citing Author Analysis output" width="900">
+</p>
+
 ## Why citation-link weighting matters
 
 Suppose a source set contains Papers A, B, and C, and one citing paper cites all three.
@@ -136,7 +144,7 @@ Near the top of `wose_citing_author_analysis.py`, edit the `params` block:
 ```python
 params = {
     "databaseId": "WOS",
-    "usrQuery": "AU=(Strickland D)",
+    "usrQuery": "AU=(Stanwood)",
     "firstRecord": 1,
     "count": 50,
     "optionView": "SR",
